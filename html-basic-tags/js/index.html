@@ -108,6 +108,59 @@
 
         <a href="https://www.nait.ca" target="_blank">go to Nait</a>
 
+        <h3>Image tag</h3>
+
+        <!--
+            an empty (void) tag (not a paired tag)
+            image tag does not have a closing tag
+            the image tag has no content, however, it does have parameters
+            
+            parameters:
+            src="relative website location"
+            alt="printable text if the image is not found at src"
+            [title="tool tip text for the image"]
+           
+            Absolute addressing is a complete fixed file path
+                drive:/folder/..../folder/filename.ext
+
+            relative address begins at a specific point
+            for websites, it is the "top of the website"
+            reference to the desired filename is done by specifying
+                the appropriate path to the desired file
+            NO DRIVE
+
+            Movement with a relative address 
+            - if only the filename is given, the location is within the same folder
+            - movement down the file structure is by /foldername
+            - movement up the file structure is by using .. for 
+            each folder level to ascend
+
+            same folder
+            ="filename.ext"
+
+            lower folder
+            ="nextleveldownfoldername/nextleveldownfoldername/.../filename.ext"
+
+            from one lower folder to another lower folder on a different branch
+            .. for each level that needs to be ascended
+            ="../../../nextleveldownfoldername/filename.ext"
+
+        -->
+        <img src="../img/photoshop.png" alt="logo photoshop"
+            title="logo image of Photoshop">
+
+            <!--
+                combine the anchor tag and the image tag as the anchor tag content
+                
+
+            -->
+        <a href="https://www.adobe.com" target="_blank">
+            <img src="../img/photoshop.png" alt="logo photoshop"
+            title="logo image of Photoshop" style="width:80px; height:80px">
+        </a>
+            
+
+
         </body>
 
 
