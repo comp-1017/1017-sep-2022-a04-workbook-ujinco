@@ -1,169 +1,137 @@
 <!DOCTYPE html>
-    <html lang="en-us">
-<!--
-    *NEED TO MOVE INDEX.HTML OUT OF JS*
--->
-        <head>
-            <!-- 
-            Something useful for information yada yada.
-            
-                title tag: this tag supplies the content for the browser tab
-                meta tag: several versions and options on this tag
-                    : charset - specifies the set of characters to be used by the web page
-                    : name= and content= - Name allows for a specific item, content is the content (text)
+<html lang="en-us">
+    <head>
+        <!-- 
+            this is a comment, it is not html code or content
 
-            the tag elements in the head area are not displayed on the web page,
-            they are not considered part of the page content,
-            they are used by the internet and browser to manage the web page.
-
-            -->
-
-
-            <meta charset="utf-8">
-
-            <title> Basic HTML structure :)
-
-            </title>
-            <meta name="author" content="Sebestyen Tran">
-
-        </head>
-
-        <body>
+            title tag: this tag supplies the content for the browse tab
+            meta tag: serveral version and option on this tag
+                    : charset - specifies the set of character to be used by the web page
+                    : name= and content= - Name allow for a specific item, content is the content (text)
         
-            <!--
-                items in this area are intended for display (content) on the web page
+            the tag elements in the head area are not displayed on the web page, they are not
+            consider part of the page content, they are used by the internet and browser to 
+            manage the web page
+        -->
+        <title>Basic Html structure</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Don Welch"> 
+    </head>
+    <body>
+        <!--
+            items in this area to indented for display (content) on the web page
 
-                header tag (h1 thru h6) - these are titles, importance is 1 (greatest) 6 (least)
+            header tag h1 thru h6 : these are titles, importance is 1 (greatest) 6 (least)
 
-                paragraph tag (p) - this tag indicates the content to be a paragraph 
-            -->
+            paragraph tag p: this tag indicates the content to be a paragraph
+        -->
 
-            <h1>Basic HTML Tags</h1>
-            <h3>Paragraph tag</h3>
-
-            <p>This page demonstrates the basic structure of a html web page.  
-               The head area has the browser title tab specified as well as the charset defined.
-               The body is demonstrating the h1 header tag and the paragraph tag.   
-            </p>
-            <p>
-                This is another paragraph.
-            </p>
-
-            <!--
-                If you wish to use a component of a reserved tag ( or a whole tag) you would
-                be in trouble using the tag. Instead, you can use special character strings
-                to represent components of the tag such as the < (&lt;) and the > (&gt;)
-                symbols. 
-             -->
-
-            <h3>List tags: &lt;ol&gt; and &lt:ul&gt;</h3>
-            <!--
-                block tag , paired
-                create an ordered list (numbered) using <ol>
-
-                create an unordered list (bulleted) using <ul>
-                
-                items in this list are indicated using the line item, <li>
-
-            -->
+        <h1>Basic Html Tags</h1>
+        <h3>Paragraph tag</h3>
+        <p>This page demonstrates the basic structure of an html web page. The head area has the
+            the browse title tab specified as well as the charset defined. The body is demonstrating
+            the h1 header tag and the paragraph tag.
+        </p>
+        <p>this is another paragraph</p>
+        <!-- 
+            if you wish to use a component of a reserved tag (or the whole tag)
+                you would be in trouble using the tag.
+            instead: you can use special character strings to represent
+                components of the tag sucha as the < (&lt;) and the > (&gt;)
+                symbols
+        -->
+        <h3>List tags: &lt;ol&gt; and &lt;ul&gt;</h3>
+        <!-- 
+            block tag , paired
+            create an ordered list (numbered) using <ol>
+            create an unordered list (bulleted) using <ul>
+            items in the list are indicated using the line item <li> 
+        -->
+        <ol>
+            <li>Add extension Live Server for Go Live execution from VSC</li>
+            <li>Open extensions using 5 icon on left by menu</li>
+            <li>either search for Live Server or select if seen in list</li>
+            <li>press install</li>
+            <li>To use
                 <ol>
-                    <li>Add extension Live Server for Go Live execution from VSC</li>
-                    <li>Open extensions using fifth icon on left by menu</li>
-                    <li>either search for Live Server or select if seen in list</li>
-                    <li>press install</li>
-                    <li>To use
-                        <ol>
-                        <li>Open an html page</li>
-                        <li>Make any adjustments</li>
-                        <li>Save adjustments</li>
-                        <li>Look to bottom right on blue status line for Go Live and press</li>
-                        <li>Make additional adjustments, save and return to browser to see updates</li>
+                    <li>open an html page</li>
+                    <li>Make any adjustments</li>
+                    <li>Save adjustments</li>
+                    <li>look to bottom right on blue status line for Go Live and press</li>
+                    <li>Make additional adjustments, save and return to browser to see updates</li>
                 </ol>
             </li>
         </ol>
         <ul>
             <li>this is an unordered list</li>
             <li>default display is a bulleted list</li>
-            <li> we will see later how to remove these bullets using css styling</li>
-
+            <li>we will see later how to remove these bullets using css styling</li>
         </ul>
 
         <h3>Anchor tag (a.k.a. linking to another page)</h3>
         <!-- blocked paired
-            This is an anchor tag and is incorrectly often referred to as the link tag.
-
-            One should not use the link tag because there is actually a <link>
-            used in the <head> section. The Anchor tag can take your to 
-            a different location whether it be on a different website,
-            different page in the current web site, or a different location 
-            on the current page. 
+            This is an anchor tag and is incorrectly often referred to as the
+                link tag
+            One should NOT use the link tag because ther is actually a <link>
+                used in the ,head> section
+            The anchor tag can take you to a different location whether it
+                be on a different website, different page in the current web site
+                or a different location on the current page
 
             parameters:
             href: points to the desired location
-
-            target:indicates the browser page display option
-            default is same display page tab
-            _blank will open a new browser tab (page)
-
-
+            target: indicates the browser page display option
+                    default is same display page tab
+                    _blank will open a new browser tab (page)
         -->
-
         <a href="https://www.nait.ca" target="_blank">go to Nait</a>
 
         <h3>Image tag</h3>
-
-        <!--
-            an empty (void) tag (not a paired tag)
+        <!--an empty (void) tag 
             image tag does not have a closing tag
-            the image tag has no content, however, it does have parameters
-            
-            parameters:
-            src="relative website location"
+            the image tag has no content, however is does have parameters
+
+            parameters
+            src="relative web site location"
             alt="printable text if the image is not found at src"
             [title="tool tip text for the image"]
-           
-            Absolute addressing is a complete fixed file path
+
+            Absolute Addressing is a complete fixed file path
                 drive:/folder/..../folder/filename.ext
 
             relative address begins at a specific point
-            for websites, it is the "top of the website"
+            for web sites, it is the "top of the web site"
             reference to the desired filename is done by specifying
-                the appropriate path to the desired file
+                the appropriate folder path to the desired file
             NO DRIVE
 
-            Movement with a relative address 
-            - if only the filename is given, the location is within the same folder
+            Movement with a relative address
+            - if only the filename is given, the location is within the
+                same folder
             - movement down the file structure is by /foldername
-            - movement up the file structure is by using .. for 
-            each folder level to ascend
+            - movement up the file structure is by using .. for each
+                folder level to ascend
 
             same folder
-            ="filename.ext"
+             ="filename.ext"
 
             lower folder
-            ="nextleveldownfoldername/nextleveldownfoldername/.../filename.ext"
+             ="nextleveldownfoldername/nextleveldownfoldername/.../filename.ext"
 
             from one lower folder to another lower folder on a different branch
             .. for each level that needs to be ascended
-            ="../../../nextleveldownfoldername/filename.ext"
-
+             ="../../../nextleveldownfoldername/filename.ext"
         -->
         <img src="img/photoshop.png" alt="logo photoshop"
-            title="logo image of Photoshop">
+            title="a logo image of Photoshop">
 
-            <!--
-                combine the anchor tag and the image tag as the anchor tag content
-                
-
-            -->
-        <a href="https://www.adobe.com" target="_blank">
-            <img src="img/photoshop.png" alt="logo photoshop"
-            title="logo image of Photoshop" style="width:80px; height:80px">
-        </a>
+        <!--
+            combine the anchor tag and the image tag as the anchor tag content
             
-
-
-        </body>
-
-
-    </html>
+        -->
+        <a href="http://www.adobe.com" target="_blank">
+            <img src="img/photoshop.png" alt="logo photoshop"
+            title="a logo image of Photoshop" style="width:80px; height:80px;">
+        </a>
+    </body>
+</html>
